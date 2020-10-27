@@ -17,13 +17,6 @@ interface accountInfo {
   confirmPassword: string;
 }
 
-const initialValues: accountInfo = {
-  emailID: "",
-  userName: "",
-  password: "",
-  confirmPassword: "",
-};
-
 const validationSchema = Yup.object({
   emailID: Yup.string().required("Required").email("Invalid Email"),
   userName: Yup.string().required("Required"),

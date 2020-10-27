@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { Theme, createStyles, makeStyles } from "@material-ui/core/styles";
 import {
   Accordion,
   AccordionSummary,
@@ -16,21 +15,7 @@ interface Props {
   formValues: any;
 }
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      width: "100%",
-    },
-    heading: {
-      fontSize: theme.typography.pxToRem(15),
-      fontWeight: theme.typography.fontWeightRegular,
-    },
-  })
-);
-
 const Review: FC<Props> = ({ formValues, submit }) => {
-  const classes = useStyles();
-
   return (
     <Formik
       initialValues={formValues}

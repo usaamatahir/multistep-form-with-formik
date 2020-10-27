@@ -19,15 +19,6 @@ interface personalInfo {
   phoneNumber: number;
 }
 
-const initialState: personalInfo = {
-  firstName: "",
-  lastName: "",
-  fatherName: "",
-  city: "",
-  age: 0,
-  phoneNumber: 0,
-};
-
 const validationSchema = Yup.object({
   firstName: Yup.string().required("Required"),
   lastName: Yup.string().required("Required"),

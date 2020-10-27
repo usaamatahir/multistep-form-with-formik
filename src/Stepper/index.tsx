@@ -1,36 +1,9 @@
 import React, { useState } from "react";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
-import {
-  Stepper,
-  Step,
-  StepLabel,
-  Button,
-  Typography,
-} from "@material-ui/core";
+import { Stepper, Step, StepLabel } from "@material-ui/core";
 import PersonalInformation from "../Forms/PersonalInformation";
 import AccountInformation from "../Forms/AccountInformation";
 import Review from "../Forms/Review";
-
-interface personalInfo {
-  firstName: string;
-  lastName: string;
-  fatherName: string;
-  city: string;
-  age: number;
-  phoneNumber: number;
-}
-
-interface formValueType {
-  firstName: string;
-  lastName: string;
-  fatherName: string;
-  city: string;
-  age: number;
-  phoneNumber: number;
-  emailID: string;
-  userName: string;
-  password: string;
-}
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
