@@ -1,0 +1,25 @@
+h1 {
+  text-align: center;
+}
+
+.review_Accordion {
+  padding: 10px;
+}
+
+.review_Content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #111111;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+}
